@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HairBloom - Soins Capillaires Naturels</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background-color: #fffaf9;
+      color: #222;
+    }
+    header {
+      background-color: #f8d4e4;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #222;
+      font-weight: 600;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #f3ede7;
+    }
+    .hero img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    .hero h2 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    .hero button {
+      background-color: #d0e6d6;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    h2 {
+      text-align: center;
+    }
+    .hair-types {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 100px;
+      max-width: 1000px;
+      margin: 30px auto;
+    }
+    .hair-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .hair-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+    .hair-card h3 {
+      margin-bottom: 10px;
+      color: #cc4477;
+    }
+    .hair-card ul {
+      list-style: none;
+      padding: 0;
+    }
+    .hair-card ul li {
+      margin: 8px 0;
+    }
+    .newsletter {
+      background: #f3ede7;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .newsletter input[type="email"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      width: 250px;
+    }
+    .newsletter button {
+      padding: 10px 15px;
+      background: #f8d4e4;
+      border: none;
+      border-radius: 6px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    .newsletter button:hover {
+      background: #f1bcd3;
+    }
+    .contact {
+      margin-top: 15px;
+      font-size: 0.95em;
+      color: #555;
+    }
+    footer {
+      background-color: #f8d4e4;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HairBloom</h1>
+    <nav>
+      <a href="#types">Types de cheveux</a>
+      <a href="#tips">Astuces</a>
+      <a href="#newsletter">Newsletter</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="hairbloom\hair.jpg" alt="Femme avec cheveux naturels">
+    <h2>Révèle la beauté naturelle de tes cheveux</h2>
+    <p>Des routines personnalisées, des produits naturels et des conseils inspirants pour chaque femme.</p>
+    <button onclick="document.getElementById('types').scrollIntoView({behavior:'smooth'})">Découvrir les routines</button>
+  </section>
+
+  <section id="types">
+    <h2>Quel est ton type de cheveux ?</h2>
+    <div class="hair-types">
+      <div class="hair-card">
+        <img src="https://i.pinimg.com/736x/be/33/ff/be33ffe43942fe8a377209edb126bf75.jpg" alt="Cheveux raides">
+        <h3>Cheveux Raides</h3>
+        <ul>
+          <li>Shampoing doux sans sulfates <a href="https://amzn.to/434eftb">(Amazon)</a></li>
+          <li>Spray volume naturel</li>
+          <li>Sérum brillance légère</li>
+        </ul>
+      </div>
+      <div class="hair-card">
+        <img src="https://i.pinimg.com/736x/28/ea/19/28ea19b2d354c5cac097b042107f0b88.jpg" alt="Cheveux ondulés">
+        <h3>Cheveux Ondulés</h3>
+        <ul>
+          <li>Shampoing hydratant léger</li>
+          <li>Crème définissante boucles <a href="https://amzn.to/42LNdIk">(Amazon)</a></li>
+          <li>Diffuseur à basse chaleur</li>
+        </ul>
+      </div>
+      <div class="hair-card">
+        <img src="https://i.pinimg.com/736x/e1/f8/6f/e1f86f2bfc68375b7fed9bff1bd84783.jpg" alt="Cheveux crépus">
+        <h3>Cheveux Crépus</h3>
+        <ul>
+          <li>Bain d’huile avant shampoing</li>
+          <li>Beurre de karité pur <a href="https://amzn.to/4AExemple">(Amazon)</a></li>
+          <li>Twist-out hydraté</li>
+        </ul>
+      </div>
+      <div class="hair-card">
+        <img src="https://i.pinimg.com/736x/a9/17/d4/a917d476963dd3197d4c6c5497fea15b.jpg" alt="Cheveux bouclés">
+        <h3>Cheveux Bouclés</h3>
+        <ul>
+          <li>Shampoing sans sulfates hydratant</li>
+          <li>Leave-in conditioner naturel <a href="https://amzn.to/3RNnEA7">(Amazon)</a></li>
+          <li>Diffusion douce à l’air tiède</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="tips" class="tips-section">
+    <style>
+      .tips-section {
+        background-image: url('https://i.pinimg.com/736x/f9/03/15/f90315e02231163ef58164a018ca46e1.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        padding: 60px 20px;
+        color: #fff;
+      }
+  
+      .tips-section::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0, 0, 0, 0.4); /* filtre foncé pour la lisibilité */
+        z-index: 0;
+        border-radius: 0;
+      }
+  
+      .tips-section h2,
+      .tips-section .tip,
+      .tips-section .tip h3,
+      .tips-section .tip p {
+        position: relative;
+        z-index: 1;
+      }
+  
+      .tips-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+        max-width: 1000px;
+        margin: 30px auto;
+        padding: 0 10px;
+      }
+  
+      .tip {
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        color: #333;
+        transition: transform 0.2s ease;
+      }
+  
+      .tip:hover {
+        transform: translateY(-4px);
+      }
+  
+      .tip h3 {
+        margin-top: 0;
+        color: #cc4477;
+        font-size: 1.1em;
+      }
+  
+      .tip p {
+        font-size: 0.95em;
+        line-height: 1.5;
+      }
+  
+      .tips-section h2 {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 30px;
+        color: #fff;
+      }
+    </style>
+  
+    <h2>Astuces & Conseils</h2>
+    <div class="tips-container">
+      <div class="tip">
+        <h3>💧 Hydratation</h3>
+        <p>Bois suffisamment d’eau et choisis des soins riches en aloe vera ou glycérine végétale. Lave moins souvent tes cheveux pour préserver leur hydratation naturelle.</p>
+      </div>
+      <div class="tip">
+        <h3>🍯 Masques maison</h3>
+        <p>Miel + yaourt nature + huile d’olive = un masque nourrissant à faire chaque semaine pour renforcer tes cheveux.</p>
+      </div>
+      <div class="tip">
+        <h3>🧴 À éviter</h3>
+        <p>Sulfates, parabènes et silicones non solubles sont à éviter : ils peuvent abîmer ou étouffer la fibre capillaire.</p>
+      </div>
+      <div class="tip">
+        <h3>🧠 Lire les étiquettes</h3>
+        <p>Favorise les listes d’ingrédients courtes et naturelles. Moins c’est chimique, mieux c’est pour ta chevelure.</p>
+      </div>
+      <div class="tip">
+        <h3>🎯 Objectif : Connaissance</h3>
+        <p>Connaître ton type de cheveux t’aide à adapter ta routine et révéler leur beauté naturelle. La clé, c’est l’écoute.</p>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <section id="newsletter" class="newsletter">
+    <h2>Reste connectée ✨</h2>
+    <p>Inscris-toi à notre newsletter pour recevoir chaque semaine des routines, offres et conseils exclusifs !</p>
+    <form>
+      <input type="email" placeholder="Ton email" required>
+      <button type="submit">Je m’inscris</button>
+    </form>
+    <div class="contact">
+      Une question ? <a href="mailto:lilyatament@gmail.com">Écris-nous ici</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HairBloom - Beauté capillaire naturelle & personnalisée</p>
+  </footer>
+</body>
+</html>
+
